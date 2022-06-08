@@ -22,7 +22,7 @@
           <div>
             Our quality control system is formerly documented to meet
             requirements of BS EN 9000 and it is geared towards continuing
-            performance improvements to work.
+            performance improvements.
           </div>
         </div>
         <div class="flex space-x-4">
