@@ -15,7 +15,7 @@
       <p class="pb-7 font-light">
         “We aim to become an international Pipeline, Engineering and
         Construction service company that provides services of International
-        standa”
+        standard from brian”
       </p>
 
       <button

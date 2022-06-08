@@ -15,7 +15,7 @@
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/about">Services</RouterLink>
         <RouterLink to="/about">Contact</RouterLink>
-        <RouterLink to="/about">supports</RouterLink>
+        <RouterLink to="/about">supports them</RouterLink>
       </nav>
     </div>
   </div>
@@ -36,7 +36,7 @@
         <ul class="flex gap-x-4">
           <RouterLink to="/">Home</RouterLink>
 
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/about">About Anbe</RouterLink>
 
           <RouterLink to="/about">Services</RouterLink>
 
