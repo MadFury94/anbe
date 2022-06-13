@@ -36,7 +36,7 @@
         <ul class="flex gap-x-4">
           <RouterLink to="/">Home</RouterLink>
 
-          <RouterLink to="/about">About Anbe</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
 
           <RouterLink to="/about">Services</RouterLink>
 
