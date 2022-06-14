@@ -33,7 +33,7 @@
         </a>
       </div>
       <nav class="hidden md:block">
-        <ul class="flex gap-x-4">
+        <ul class="flex gap-x-4 px-3">
           <RouterLink to="/">Home</RouterLink>
 
           <RouterLink to="/about">About</RouterLink>
