@@ -9,7 +9,7 @@ import Ourleader from "../Sections/ourleader.vue";
   <main>
     <Background_writeup></Background_writeup>
     <Backgroundimage_button></Backgroundimage_button>
-    <Localcontent></Localcontent>
     <Ourleader></Ourleader>
+    <Localcontent></Localcontent>
   </main>
 </template>
