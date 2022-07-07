@@ -18,6 +18,16 @@
       </p>
     </div>
   </div>
+  <div class="px-40 py-3"></div>
+  <h1 class="font-bold text-2xl px-8">WANT TO HIRE RESOURCES OR VEHICLES?</h1>
+  <div class="p-5 px-40"></div>
+  <div class="px-9">
+    <button
+      class="h-0 pb-12 px-9 border-solid border-4 border-orange-500 text-orange-500"
+    >
+      CLICK HERE
+    </button>
+  </div>
   <body class="bg-orange-500 px-8 py-12 text-gray-100">
     <div
       class="mx-auto mt-24 grid max-w-screen-xl grid-cols-1 gap-8 rounded-lg bg-gray-100 px-8 py-16 text-gray-900 shadow-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32"
