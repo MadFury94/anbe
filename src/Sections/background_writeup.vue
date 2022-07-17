@@ -19,7 +19,7 @@
       <div class="p-4"></div>
       <section class="grid gap-8 md:grid-cols-2">
         <aside>
-          <p class="pb-7 font-light">
+          <p class="pb-7 py-24 font-light">
             <span class="font-bold">ANBE NIGERIA</span> LTD is an indigenous
             Engineering company, incorporated in 1990 to provide prompt and
             efficient services to the Oil and Gas sectors of the economy.
