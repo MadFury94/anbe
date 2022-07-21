@@ -38,9 +38,9 @@
 
           <RouterLink to="/about">About</RouterLink>
 
-          <RouterLink to="/about">Services</RouterLink>
+          <RouterLink to="/services">Services</RouterLink>
 
-          <RouterLink to="/about">Contact</RouterLink>
+          <RouterLink to="/contact">Contact</RouterLink>
         </ul>
       </nav>
       <button class="md:hidden">menu</button>
