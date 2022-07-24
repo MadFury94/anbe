@@ -16,7 +16,7 @@
   </div>
   <div>
     <img
-      class="w-full object-fill"
+      class="h-auto lg:h-[800px] w-full object-fill"
       src="https://anbenig.com/wp-content/uploads/2017/09/bakken-flaring-1.jpg"
       alt="Snow"
     />
