@@ -25,8 +25,73 @@
     <div class="bg-white-500 text-orange-500 text-center">CLICK HERE</div>
    -->
   </div>
+  <section>
+    <div class="relative text-center font-bold text-white">
+      <div class="w-full brightness-50">
+        <img
+          class="h-auto lg:h-[800px] w-full object-fill"
+          src="https://anbenig.com/wp-content/uploads/2020/01/dirty-industry-stack-factory.jpg"
+          alt="Snow"
+        />
+      </div>
+      <div class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4">
+        <div class="font-light">
+          <div class="flex gap-x-4 px-20 py-10">
+            <div class="w-16 h-0 border-2 px-14 border-orange-500"></div>
+          </div>
+          <div class="py-4">
+            <h1 class="text-3xl text-orange-500">Our Latest Projects</h1>
+          </div>
+          <p class="py-4">
+            Do you want to know more? Click the button to see our latest work
+          </p>
+        </div>
+
+        <button
+          @click="displaySection"
+          class="border border-orange-500 bg-transparent py-2 px-5 text-orange-500 hover:border-transparent hover:bg-orange-300"
+        >
+          VIEW OUR WORK
+        </button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="relative text-center font-bold text-white">
+      <div class="w-full brightness-50">
+        <img
+          class="w-full object-fill h-96"
+          src="https://anbenig.com/wp-content/uploads/2019/12/handyman_10.jpg"
+          alt="Snow"
+        />
+      </div>
+      <div class="absolute top-2/4 left-2/4 -translate-y-40 -translate-x-2/4">
+        <h1 class="text-2xl">Our Trademarked Process & Workflow.</h1>
+        <p class="pb-4 font-light">
+          Due to our extensive involvement in oil and gas engineering projects,
+          we have acquired high skill proficiency and are therefore capable of
+          carrying out multi-skill tasks. We retain the services of these
+          professionals and this has enabled us to achieve an unblemished
+          reputation of always delivering on time with a high standard quality
+        </p>
+
+        <button
+          class="border border-orange-500 bg-transparent py-2 px-5 font-bold text-orange-500 hover:border-transparent hover:bg-orange-300"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
 </template>
 <script setup>
+import { ref } from "vue";
+
+const SectionState = ref(false);
+function displaySection() {
+  console.log("i am walking");
+  SectionState.value = true;
+}
 const About = [
   {
     title: "Happy Clients",
