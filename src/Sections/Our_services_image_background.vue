@@ -11,18 +11,8 @@
       <div class="py-4 px-32">
         <div class="w-14 border-2 border-orange-500 lg:pb-4"></div>
       </div>
-      <h1 class="pb-10 text-3xl text-orange-500">ANBE NIGERIA LTD</h1>
-      <p class="pb-7 font-light">
-        “We aim to become an international Pipeline, Engineering and
-        Construction service company that provides services of International
-        standard from brian”
-      </p>
-
-      <button
-        class="border border-orange-500 bg-transparent py-2 px-5 text-orange-500 hover:border-transparent hover:bg-orange-300"
-      >
-        VIEW OUR WOR
-      </button>
+      <h1 class="pb-10 text-3xl text-orange-500">OUR SERVICES</h1>
+      <p class="pb-7 font-light"></p>
     </div>
   </div>
 </template>
