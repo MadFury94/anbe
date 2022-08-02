@@ -21,7 +21,7 @@
   </div>
 </template> -->
 <template>
-  <header class="text-black-100 bg-white text-lg font-semibold px-80">
+  <header class="text-black-100 text-lg font-semibold xl:px-60 hidden lg:block">
     <div class="flex items-center justify-between">
       <div>
         <a href="https://anbenig.com" target="_blank">
@@ -32,19 +32,45 @@
           />
         </a>
       </div>
-      <nav class="hidden md:block">
-        <div class="flex gap-x-6 px-3">
-          <div
-            class="flex gap-x-8 px-3"
-            v-for="(item, index) in headerRoutes"
-            :key="index"
-          >
+      <div>
+        <nav class="">
+          <div class="flex gap-x-6 px-3">
+            <div
+              class="flex gap-x-8 px-3"
+              v-for="(item, index) in headerRoutes"
+              :key="index"
+            >
+              <RouterLink active-class="active" :to="{ name: item.name }">{{
+                item.title
+              }}</RouterLink>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <header class="lg:hidden">
+    <div class="flex justify-between px-8">
+      <div>
+        <a href="https://anbenig.com" target="_blank">
+          <img
+            class="w-20"
+            src="https://anbenig.com/wp-content/uploads/2017/09/logo-01.png"
+            alt="anbe logo"
+          />
+        </a>
+      </div>
+      <div>
+        <button class="lg:hidden">Menu</button>
+
+        <div class="">
+          <div class="" v-for="(item, index) in headerRoutes" :key="index">
             <RouterLink active-class="active" :to="{ name: item.name }">{{
               item.title
             }}</RouterLink>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
   </header>
 </template>
