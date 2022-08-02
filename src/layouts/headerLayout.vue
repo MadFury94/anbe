@@ -21,7 +21,7 @@
   </div>
 </template> -->
 <template>
-  <header class="text-black-100 bg-white text-lg font-semibold">
+  <header class="text-black-100 bg-white text-lg font-semibold px-80">
     <div class="flex items-center justify-between">
       <div>
         <a href="https://anbenig.com" target="_blank">
@@ -33,17 +33,54 @@
         </a>
       </div>
       <nav class="hidden md:block">
-        <ul class="flex gap-x-4 px-3">
-          <RouterLink to="/">Home</RouterLink>
-
-          <RouterLink to="/about">About</RouterLink>
-
-          <RouterLink to="/services">Services</RouterLink>
-
-          <RouterLink to="/contact">Contact</RouterLink>
-        </ul>
+        <div class="flex gap-x-6 px-3">
+          <div
+            class="flex gap-x-8 px-3"
+            v-for="(item, index) in headerRoutes"
+            :key="index"
+          >
+            <RouterLink active-class="active" :to="{ name: item.name }">{{
+              item.title
+            }}</RouterLink>
+          </div>
+        </div>
       </nav>
-      <button class="md:hidden">menu</button>
     </div>
   </header>
 </template>
+
+<script setup>
+const headerRoutes = [
+  {
+    path: "/",
+    name: "home",
+    title: "Home",
+  },
+  {
+    path: "/about",
+    name: "about",
+    title: "About",
+  },
+  {
+    path: "/projects",
+    name: "project",
+    title: "Projects",
+  },
+  {
+    path: "/services",
+    name: "services",
+    title: "Services",
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    title: "Contact",
+  },
+];
+</script>
+
+<style lang="scss" scoped>
+.active {
+  @apply text-orange-400;
+}
+</style>
