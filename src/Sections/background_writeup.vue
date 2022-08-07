@@ -3,7 +3,7 @@
     <div class="w-full brightness-50">
       <img
         class="h-screen w-full object-fill"
-        src="https://anbenig.com/wp-content/uploads/2019/12/handyman_02.jpg"
+        src="../assets/images/handyman_02.jpeg"
         alt="Snow"
       />
     </div>

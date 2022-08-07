@@ -3,7 +3,7 @@
     <div class="w-full brightness-50">
       <img
         class="h-auto lg:h-[800px] w-full object-fill"
-        src="https://anbenig.com/wp-content/uploads/2019/12/pexels-photo-327041.jpeg"
+        src="../assets/images/gas-flare.jpeg"
         alt="Snow"
       />
     </div>
