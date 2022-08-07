@@ -1,5 +1,5 @@
 <template>
-  <header class="text-black-100 text-lg font-semibold xl:px-60 hidden lg:block">
+  <header class="text-black-100 hidden text-lg font-semibold lg:block xl:px-60">
     <div class="flex items-center justify-between">
       <div>
         <a href="" target="_blank">
@@ -30,7 +30,7 @@
 
   <!-- mobile menu design -->
   <header class="lg:hidden">
-    <div class="flex justify-between items-center px-8">
+    <div class="flex items-center justify-between px-8">
       <div>
         <a href="#" target="_blank">
           <img
@@ -44,7 +44,7 @@
         {{ isMenuOpen }}
         <button @click="toggleMenu" class="bg-orange-400 p-2">Menu</button>
         <div
-          class="bg-slate-400 z-10 mt-4 absolute p-10 -ml-5"
+          class="absolute z-10 mt-4 -ml-5 bg-slate-400 p-10"
           :class="isMenuOpen ? 'block' : 'hidden'"
         >
           <div v-for="(item, index) in headerRoutes" :key="index">
@@ -93,7 +93,7 @@ const headerRoutes = [
   },
 ];
 
-const isMenuOpen = ref(true);
+const isMenuOpen = ref(false);
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;

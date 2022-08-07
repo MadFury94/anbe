@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="bg-orange-600 py-8">
+    <section class="bg-orange-500 py-8">
       <div class="space-y-10 px-10">
         <div class="flex space-x-4">
           <div>
