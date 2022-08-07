@@ -11,7 +11,7 @@
         </a>
       </div>
       <div>
-        <nav class="">
+        <nav class="font-bree">
           <div class="flex gap-x-6 px-3">
             <div
               class="flex gap-x-8 px-3"
