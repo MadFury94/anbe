@@ -2,13 +2,13 @@
   <header class="text-black-100 hidden text-lg font-semibold lg:block xl:px-60">
     <div class="flex items-center justify-between">
       <div>
-        <a href="" target="_blank">
+        <router-link to="/">
           <img
             class="w-20"
             src="../assets/images/anbe-logo.png"
             alt="anbe logo"
           />
-        </a>
+        </router-link>
       </div>
       <div>
         <nav class="font-bree">

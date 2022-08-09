@@ -12,12 +12,22 @@
           <div class="absolute inset-0 bg-gray-600 mix-blend-multiply" />
         </div>
         <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-          <div class="flex justify-center">
-            <hr class="w-20 border-4 border-orange-500" />
+          <template v-if="hasTitle">
+            <div class="flex justify-center">
+              <hr class="w-20 border-4 border-orange-500" />
+            </div>
+            <h1 class="pt-20 text-center font-bree text-5xl text-orange-500">
+              {{ title }}
+            </h1>
+          </template>
+
+          <div>
+            <h2
+              class="pt-20 text-center font-lato text-3xl font-black text-white"
+            >
+              {{ subTitle }}
+            </h2>
           </div>
-          <h1 class="pt-20 text-center font-bree text-5xl text-orange-500">
-            {{ title }}
-          </h1>
 
           <p
             class="mx-auto mt-6 max-w-lg py-8 text-center font-lato text-2xl text-white sm:max-w-3xl"
@@ -31,7 +41,7 @@
               <div>
                 <router-link
                   :to="{ name: pageLink }"
-                  class="hover:px- border-4 border-orange-500 bg-transparent py-4 px-10 font-bree tracking-widest text-orange-500 transition delay-75 hover:border-transparent hover:bg-orange-500 hover:text-white"
+                  class="border-4 border-orange-500 bg-transparent py-4 px-10 font-bree tracking-widest text-orange-500 transition delay-75 ease-in-out ease-in hover:border-transparent hover:bg-orange-500 hover:px-14 hover:text-white"
                 >
                   {{ linkTitle }}
                 </router-link>
@@ -48,9 +58,11 @@
 import { defineProps } from "vue";
 defineProps({
   title: String,
+  subTitle: String,
   text: String,
   linkTitle: String,
   pageLink: String,
   image: String,
+  hasTitle: Boolean,
 });
 </script>

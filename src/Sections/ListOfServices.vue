@@ -1,14 +1,14 @@
 <template>
   <div>
-    <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 p-20">
+    <section class="grid gap-y-10 px-10 py-20 md:grid-cols-2 lg:grid-cols-3">
       <div v-for="(item, index) in serviceList" :key="index">
-        <div class="flex gap-x-4 items-center">
+        <div class="flex items-center gap-x-4">
           <img
             :src="`images/icons/${item.icon}`"
             alt="supply icon"
             class="w-16"
           />
-          <p class="uppercase">
+          <p class="font-lato text-sm uppercase">
             {{ item.title }}
           </p>
         </div>

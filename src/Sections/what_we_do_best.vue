@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white-500 text-center py-4">
-    <h class="text-2xl text font-bold">What we do Best</h>
-    <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-2">
+  <div class="bg-white-500 py-4 text-center">
+    <h class="text text-2xl font-bold">What we do Best</h>
+    <div class="grid gap-2 md:grid-cols-3 lg:grid-cols-3">
       <div>
         <ul>
           <svg
