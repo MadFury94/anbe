@@ -11,6 +11,8 @@ import JumboTronComponent from "../components/JumboTronComponent.vue";
 <template>
   <main>
     <JumboTronComponent
+      :hasTitle="true"
+      titleClass="text-orange-500"
       title=" ANBE NIG"
       text="“We aim to become an international Pipeline, Engineering and
             Construction service company that provides services of International
@@ -23,8 +25,10 @@ import JumboTronComponent from "../components/JumboTronComponent.vue";
     <OrangeBackground />
     <!-- core areas -->
     <JumboTronComponent
-      :hasTitle="false"
-      title=" ANBE NIG"
+      :hasTitle="true"
+      title=" We’ve Been Building For Over 20 years"
+      :hasSubTitle="false"
+      titleClass="text-white"
       subTitle=" We’ve Been Building For Over 20 years"
       text="Among the non technical staff are Clerks, Administrative Officers, Accountant, Office Managers and Marketing officers."
       link-title="VIEW OUR WORK"

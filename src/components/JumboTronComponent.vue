@@ -16,12 +16,15 @@
             <div class="flex justify-center">
               <hr class="w-20 border-4 border-orange-500" />
             </div>
-            <h1 class="pt-20 text-center font-bree text-5xl text-orange-500">
+            <h1
+              :class="titleClass"
+              class="pt-20 text-center font-bree text-5xl"
+            >
               {{ title }}
             </h1>
           </template>
 
-          <div>
+          <div v-if="hasSubTitle">
             <h2
               class="pt-20 text-center font-lato text-3xl font-black text-white"
             >
@@ -58,11 +61,13 @@
 import { defineProps } from "vue";
 defineProps({
   title: String,
+  titleClass: String,
   subTitle: String,
   text: String,
   linkTitle: String,
   pageLink: String,
   image: String,
   hasTitle: Boolean,
+  hasSubTitle: Boolean,
 });
 </script>
