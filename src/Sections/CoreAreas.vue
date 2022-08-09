@@ -2,8 +2,8 @@
   <div class="relative text-center font-bold text-white">
     <div class="w-full brightness-50">
       <img
-        class="h-auto lg:h-[800px] w-full object-fill"
-        src="../assets/images/gas-flare.jpeg"
+        class="h-auto w-full object-fill lg:h-[800px]"
+        src="/images/gas-flare.jpeg"
         alt="Snow"
       />
     </div>

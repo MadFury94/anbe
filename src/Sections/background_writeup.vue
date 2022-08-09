@@ -3,7 +3,7 @@
     <div class="w-full brightness-50">
       <img
         class="h-screen w-full object-fill"
-        src="../assets/images/handyman_02.jpeg"
+        src="/images/handyman_02.jpeg"
         alt="Snow"
       />
     </div>
@@ -19,7 +19,7 @@
       <div class="p-4"></div>
       <section class="grid gap-8 md:grid-cols-2">
         <aside>
-          <p class="pb-7 py-24 font-light">
+          <p class="py-24 pb-7 font-light">
             <span class="font-bold">ANBE NIGERIA</span> LTD is an indigenous
             Engineering company, incorporated in 1990 to provide prompt and
             efficient services to the Oil and Gas sectors of the economy.

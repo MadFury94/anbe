@@ -3,11 +3,7 @@
     <div class="flex items-center justify-between">
       <div>
         <router-link to="/">
-          <img
-            class="w-20"
-            src="../assets/images/anbe-logo.png"
-            alt="anbe logo"
-          />
+          <img class="w-20" src="/images/anbe-logo.png" alt="anbe logo" />
         </router-link>
       </div>
       <div>
@@ -33,11 +29,7 @@
     <div class="flex items-center justify-between px-8">
       <div>
         <a href="#" target="_blank">
-          <img
-            class="w-20"
-            src="../assets/images/anbe-logo.png"
-            alt="anbe logo"
-          />
+          <img class="w-20" src="/images/anbe-logo.png" alt="anbe logo" />
         </a>
       </div>
       <div class="relative">
