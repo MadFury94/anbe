@@ -4,6 +4,7 @@ import OrangeBackground from "../Sections/OrangeBackground.vue";
 import LogoArea from "../Sections/LogoArea.vue";
 import contact_us from "../Sections/contact_us.vue";
 import JumboTronComponent from "../components/JumboTronComponent.vue";
+import ContactArea from "../layouts/ContactArea.vue";
 // import JumboTron from "../layouts/JumboTron.vue";
 </script>
 
@@ -37,6 +38,8 @@ import JumboTronComponent from "../components/JumboTronComponent.vue";
     <!-- core areas -->
 
     <LogoArea />
+
+    <ContactArea />
     <contact_us v-if="false"></contact_us>
 
     <!-- // background section   background image  -->
