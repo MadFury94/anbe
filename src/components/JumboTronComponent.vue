@@ -59,14 +59,41 @@
 
 <script setup>
 defineProps({
-  title: String,
-  titleClass: String,
-  subTitle: String,
-  text: String,
-  linkTitle: String,
-  pageLink: String,
-  image: String,
-  hasTitle: Boolean,
-  hasSubTitle: Boolean,
+  title: {
+    type: String,
+    default: "i have no title yet",
+  },
+  titleClass: {
+    type: String,
+    default: "",
+  },
+  subTitle: {
+    type: String,
+    default: "dddd",
+  },
+  text: {
+    type: String,
+    default: "",
+  },
+  linkTitle: {
+    type: String,
+    default: "",
+  },
+  pageLink: {
+    type: String,
+    default: "",
+  },
+  image: {
+    type: String,
+    default: "",
+  },
+  hasTitle: {
+    type: Boolean,
+    default: true,
+  },
+  hasSubTitle: {
+    type: Boolean,
+    default: true,
+  },
 });
 </script>
