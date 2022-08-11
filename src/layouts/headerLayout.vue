@@ -25,7 +25,7 @@
   </header>
 
   <!-- mobile menu design -->
-  <header class="lg:hidden">
+  <header v-if="false" class="lg:hidden">
     <div class="flex items-center justify-between px-8">
       <div>
         <a href="#" target="_blank">

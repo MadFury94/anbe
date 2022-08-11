@@ -1,8 +1,7 @@
 <script setup>
 import ListOfServices from "../Sections/ListOfServices.vue";
 import OrangeBackground from "../Sections/OrangeBackground.vue";
-import CoreAreas from "../Sections/CoreAreas.vue";
-import logo_area from "../Sections/logo_area.vue";
+import LogoArea from "../Sections/LogoArea.vue";
 import contact_us from "../Sections/contact_us.vue";
 import JumboTronComponent from "../components/JumboTronComponent.vue";
 // import JumboTron from "../layouts/JumboTron.vue";
@@ -37,8 +36,8 @@ import JumboTronComponent from "../components/JumboTronComponent.vue";
     />
     <!-- core areas -->
 
-    <logo_area></logo_area>
-    <contact_us></contact_us>
+    <LogoArea />
+    <contact_us v-if="false"></contact_us>
 
     <!-- // background section   background image  -->
     <!-- //   list of services  -->
