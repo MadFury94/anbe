@@ -1,61 +1,115 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <header class="text-black-100 hidden text-lg font-semibold lg:block xl:px-60">
-    <div class="flex items-center justify-between">
-      <div>
-        <router-link to="/">
-          <img class="w-20" src="/images/anbe-logo.png" alt="anbe logo" />
-        </router-link>
-      </div>
-      <div>
-        <nav class="font-bree">
-          <div class="flex gap-x-6 px-3">
-            <div
-              class="flex gap-x-8 px-3"
-              v-for="(item, index) in headerRoutes"
-              :key="index"
-            >
-              <RouterLink active-class="active" :to="{ name: item.name }">{{
-                item.title
-              }}</RouterLink>
+  <div class="bg-white">
+    <header>
+      <Popover class="relative bg-white">
+        <div
+          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
+        >
+          <div class="flex justify-start lg:w-0 lg:flex-1">
+            <div>
+              <router-link to="/">
+                <img class="w-20" src="/images/anbe-logo.png" alt="anbe logo" />
+              </router-link>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <!-- mobile menu design -->
-  <header class="lg:hidden">
-    <div class="flex items-center justify-between px-8">
-      <div>
-        <a href="#" target="_blank">
-          <img class="w-20" src="/images/anbe-logo.png" alt="anbe logo" />
-        </a>
-      </div>
-      <div class="relative">
-        {{ isMenuOpen }}
-        <button @click="toggleMenu" class="bg-orange-400 p-2">Menu</button>
-        <div
-          class="absolute z-10 mt-4 -ml-5 bg-slate-400 p-10"
-          :class="isMenuOpen ? 'block' : 'hidden'"
-        >
-          <div v-for="(item, index) in headerRoutes" :key="index">
-            <RouterLink
-              @click="toggleMenu"
-              active-class="active"
-              :to="{ name: item.name }"
-              >{{ item.title }}</RouterLink
+          <div class="-my-2 -mr-2 md:hidden">
+            <PopoverButton
+              class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
+              <span class="sr-only">Open menu</span>
+              <MenuIcon class="h-6 w-6" aria-hidden="true" />
+            </PopoverButton>
+          </div>
+
+          <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+            <nav class="font-bree">
+              <div class="flex gap-x-6 px-3">
+                <div
+                  class="flex gap-x-8 px-3"
+                  v-for="(item, index) in headerRoutes"
+                  :key="index"
+                >
+                  <RouterLink active-class="active" :to="{ name: item.name }">{{
+                    item.title
+                  }}</RouterLink>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
+
+        <transition
+          enter-active-class="duration-200 ease-out"
+          enter-from-class="opacity-0 scale-95"
+          enter-to-class="opacity-100 scale-100"
+          leave-active-class="duration-100 ease-in"
+          leave-from-class="opacity-100 scale-100"
+          leave-to-class="opacity-0 scale-95"
+        >
+          <PopoverPanel
+            focus
+            class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
+          >
+            <div
+              class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+            >
+              <div class="px-5 pt-5 pb-6">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <router-link to="/">
+                      <img
+                        class="w-20"
+                        src="/images/anbe-logo.png"
+                        alt="anbe logo"
+                      />
+                    </router-link>
+                  </div>
+                  <div class="-mr-2">
+                    <PopoverButton
+                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    >
+                      <span class="sr-only">Close menu</span>
+                      <XIcon class="h-6 w-6" aria-hidden="true" />
+                    </PopoverButton>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <nav class="grid grid-cols-1 gap-7">
+                    <div
+                      v-for="item in headerRoutes"
+                      :key="item.name"
+                      class="flex items-center rounded-lg p-3 hover:bg-gray-50"
+                    >
+                      <RouterLink
+                        active-class="active"
+                        class="font-bold"
+                        :to="{ name: item.name }"
+                        >{{ item.title }}</RouterLink
+                      >
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </PopoverPanel>
+        </transition>
+      </Popover>
+    </header>
+
+    <main>
+      <div>
+        <!-- Hero card -->
       </div>
-    </div>
-  </header>
-  <!-- mobile menu design -->
+
+      <!-- More main page content here... -->
+    </main>
+  </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
+import { MenuIcon, XIcon } from "@heroicons/vue/outline";
 
 const headerRoutes = [
   {
@@ -84,13 +138,6 @@ const headerRoutes = [
     title: "Contact",
   },
 ];
-
-const isMenuOpen = ref(false);
-
-function toggleMenu() {
-  isMenuOpen.value = !isMenuOpen.value;
-  console.log(isMenuOpen.value, "here");
-}
 </script>
 
 <style lang="scss" scoped>
