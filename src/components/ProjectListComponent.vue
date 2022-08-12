@@ -12,15 +12,15 @@
         </div>
         <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
           <div class="gap-y-10 gap-x-4 bg-white p-20 lg:grid lg:grid-cols-2">
-            <div v-for="(item, index) in 5" :key="index">
+            <div v-for="(item, index) in projectList" :key="index">
               <img
-                class="rounded-md"
-                src="/images/projects/10306556362782-1.jpg"
+                class="h-[400px] w-[600px] rounded-md"
+                :src="`/images/projects/${item.image}`"
               />
               <div class="mt-4 space-y-2">
-                <h3>SPDC/NEWCROSS /EROTON/SEPL AT</h3>
-                <p>Design/Fabrication/Installation Of Flare Line/Stacks</p>
-                <h3>2005 TILL DATE</h3>
+                <h3>{{ item.title }}</h3>
+                <p class="w-[400] break-words">{{ item.subTitle }}</p>
+                <h3 v-if="item.date">{{ item.date }}</h3>
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@
 
 ,
 <script setup>
-/* const projectList = [
+const projectList = [
   {
     title: "SPDC/NEWCROSS /EROTON/SEPL AT",
     subTitle: "Design/Fabrication/Installation Of Flare Line/Stacks",
@@ -43,19 +43,31 @@
     title: "NAOC",
     subTitle: "Installation of Flare Gas Metering System",
     image: "10306556362782.jpg",
-    date: "",
   },
   {
-    title: "",
-    subTitle: "",
+    title: "SPDC",
+    subTitle:
+      "Ignition (RFI) and Flare Stack System in SPDC Instrument modification works on gas supply line to Alaoji power plant.",
     image: "flare-system-500x500-1.jpg",
-    date: "",
+    date: "2011",
   },
   {
-    title: "",
-    subTitle: "",
-    image: "flare-system-500x500-1.jpg",
-    date: "",
+    title: "SPDC/NEWCROSS /EROTON/SEPL AT",
+    subTitle: "ANBE Locally Made And Installed Ignition Panel",
+    image: "b48a17e61478972b1ea71b8aa791c1ae.jpg",
+    date: "2005 TILL DATE",
   },
-]; */
+  {
+    title: "FLUENTA REP",
+    subTitle: "Installation Of Flare Gas Metering System",
+    image: "10306556362782.jpg",
+  },
+  {
+    title: "SPDC",
+    subTitle:
+      "Fabrication of Gaslift Phase 3 Spools & Pipe support(SEA EAGLE) SPDC",
+    image: "Gallery-BAE-woodside4__FocusFillWzExMTYsODM4LCJ5IiwwXQ.jpg",
+    date: "2015",
+  },
+];
 </script>
