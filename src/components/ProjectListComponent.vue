@@ -29,3 +29,33 @@
     </div>
   </div>
 </template>
+
+,
+<script setup>
+/* const projectList = [
+  {
+    title: "SPDC/NEWCROSS /EROTON/SEPL AT",
+    subTitle: "Design/Fabrication/Installation Of Flare Line/Stacks",
+    image: "flare-piping-scaled.jpg",
+    date: "2005  TILL DATE",
+  },
+  {
+    title: "NAOC",
+    subTitle: "Installation of Flare Gas Metering System",
+    image: "10306556362782.jpg",
+    date: "",
+  },
+  {
+    title: "",
+    subTitle: "",
+    image: "flare-system-500x500-1.jpg",
+    date: "",
+  },
+  {
+    title: "",
+    subTitle: "",
+    image: "flare-system-500x500-1.jpg",
+    date: "",
+  },
+]; */
+</script>
