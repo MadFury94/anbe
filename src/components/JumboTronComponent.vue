@@ -24,13 +24,13 @@
             </h1>
           </template>
 
-          <div v-if="hasSubTitle">
+          <template v-if="hasSubTitle">
             <h2
               class="pt-20 text-center font-lato text-3xl font-black text-white"
             >
               {{ subTitle }}
             </h2>
-          </div>
+          </template>
 
           <p
             class="mx-auto mt-6 max-w-lg py-8 text-center font-lato text-2xl text-white sm:max-w-3xl"
@@ -69,7 +69,7 @@ defineProps({
   },
   subTitle: {
     type: String,
-    default: "dddd",
+    default: "",
   },
   text: {
     type: String,
@@ -93,7 +93,7 @@ defineProps({
   },
   hasSubTitle: {
     type: Boolean,
-    default: true,
+    default: false,
   },
 });
 </script>

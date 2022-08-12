@@ -11,8 +11,7 @@ import ContactArea from "../layouts/ContactArea.vue";
 <template>
   <main>
     <JumboTronComponent
-      :hasTitle="true"
-      titleClass="text-orange-500"
+      title-class="text-orange-500"
       title=" ANBE NIG"
       text="“We aim to become an international Pipeline, Engineering and
             Construction service company that provides services of International
@@ -28,7 +27,6 @@ import ContactArea from "../layouts/ContactArea.vue";
     <JumboTronComponent
       :hasTitle="true"
       title=" We’ve Been Building For Over 20 years"
-      :hasSubTitle="false"
       titleClass="text-white"
       subTitle=" We’ve Been Building For Over 20 years"
       text="Among the non technical staff are Clerks, Administrative Officers, Accountant, Office Managers and Marketing officers."
