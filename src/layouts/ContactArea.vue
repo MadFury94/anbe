@@ -7,20 +7,31 @@ const formData = ref({
   email: "",
   message: "",
 });
+
+const isDev = import.meta.env.DEV;
+
+console.log(import.meta.env.DEV);
+// const isDev = import.meta.e === "development";
 </script>
 
 <template>
   <div>
     <div class="grid lg:grid-cols-2">
       <div class="-mb-10 bg-orange-500 p-4">
-        {{ formData }}
+        <template v-if="!isDev">
+          {{ formData }}
+        </template>
 
-        <h1 class="font-bree text-2xl uppercase lg:text-5xl">Contact Us</h1>
-        <hr class="w-20 border-4 border-white" />
+        <div class="py-8 lg:py-0 lg:px-20">
+          <h1 class="font-bree text-2xl uppercase lg:text-5xl">Contact Us</h1>
+          <hr class="mt-4 w-20 border-4 border-black" />
+        </div>
 
         <!-- contact form -->
 
-        <div class="grid-cols-1 gap-x-10 md:grid md:grid-cols-2 lg:p-20">
+        <div
+          class="grid-cols-1 gap-x-10 gap-y-10 space-y-8 md:grid md:grid-cols-2 md:space-y-0 lg:p-20"
+        >
           <div class="w-full">
             <label
               for="fullname"

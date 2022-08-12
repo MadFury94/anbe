@@ -1,5 +1,5 @@
 <template>
-  <div class="px-1- container mx-auto py-20 px-4 lg:px-40">
+  <div class="px-1- container mx-auto py-20 px-4 lg:px-20">
     <div
       class="grid grid-cols-2 items-center gap-x-10 gap-y-10 lg:grid-cols-3 xl:grid-cols-4"
     >
@@ -8,9 +8,9 @@
       </div>
     </div>
   </div>
-  <hr />
+  <img class="" src="/images/svg/blade.svg" />
   <div
-    class="flex flex-col items-center justify-between py-3 lg:flex-row lg:px-28"
+    class="flex flex-col items-center justify-between py-20 lg:flex-row lg:px-28"
   >
     <h1 class="px-8 font-bree font-bold lg:text-2xl">
       WANT TO HIRE RESOURCES OR VEHICLES?

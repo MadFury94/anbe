@@ -4,7 +4,7 @@
     <header>
       <Popover class="relative bg-white">
         <div
-          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
+          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
         >
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <div>

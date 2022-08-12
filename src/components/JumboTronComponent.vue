@@ -16,6 +16,7 @@
             <div class="flex justify-center">
               <hr class="w-20 border-4 border-orange-500" />
             </div>
+
             <h1
               :class="titleClass"
               class="pt-20 text-center font-bree text-5xl"
@@ -33,11 +34,13 @@
           </template>
 
           <p
-            class="mx-auto mt-6 max-w-lg py-8 text-center font-lato text-2xl text-white sm:max-w-3xl"
+            :class="textClass"
+            class="mx-auto mt-6 max-w-lg py-8 text-center font-lato text-white sm:max-w-3xl"
           >
             {{ text }}
           </p>
           <div
+            v-if="hasButton"
             class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center"
           >
             <div class="flex justify-center">
@@ -94,6 +97,15 @@ defineProps({
   hasSubTitle: {
     type: Boolean,
     default: false,
+  },
+  textClass: {
+    type: String,
+    default: "text-2xl",
+  },
+
+  hasButton: {
+    type: Boolean,
+    default: true,
   },
 });
 </script>
