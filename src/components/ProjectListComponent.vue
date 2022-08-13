@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <div class="absolute inset-x-0 bottom-0 h-1/2 bg-white" />
-    <div class="mx-auto">
+    <div>
       <div class="relative shadow-xl sm:overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -10,13 +10,13 @@
             alt="People working on laptops"
           />
         </div>
-        <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+        <div class="relative py-16 sm:px-6 lg:py-32 lg:px-8">
           <div
-            class="container mx-auto grid gap-y-10 gap-x-4 bg-white p-20 lg:grid-cols-2"
+            class="container mx-auto grid gap-y-10 gap-x-4 bg-white p-4 lg:grid-cols-2 lg:p-10"
           >
             <div v-for="(item, index) in projectList" :key="index">
               <img
-                class="h-[400px] w-[600px] rounded-md"
+                class="rounded-md lg:h-[400px] lg:w-[600px]"
                 :src="`/images/projects/${item.image}`"
               />
               <div class="mt-4 space-y-2">

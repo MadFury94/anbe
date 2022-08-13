@@ -2,7 +2,7 @@
 <template>
   <div class="bg-white">
     <header>
-      <Popover class="relative bg-white">
+      <Popover v-slot="{ open }" class="relative bg-white">
         <div
           class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
         >
@@ -47,52 +47,57 @@
           leave-from-class="opacity-100 scale-100"
           leave-to-class="opacity-0 scale-95"
         >
-          <PopoverPanel
-            focus
-            class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
-          >
-            <div
-              class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+          <div v-if="open">
+            <PopoverPanel
+              v-slot="{ close }"
+              focus
+              class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
+              static
             >
-              <div class="px-5 pt-5 pb-6">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <router-link to="/">
-                      <img
-                        class="w-20"
-                        src="/images/anbe-logo.png"
-                        alt="anbe logo"
-                      />
-                    </router-link>
-                  </div>
-                  <div class="-mr-2">
-                    <PopoverButton
-                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
-                    >
-                      <span class="sr-only">Close menu</span>
-                      <XIcon class="h-6 w-6" aria-hidden="true" />
-                    </PopoverButton>
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <nav class="grid grid-cols-1 gap-7">
-                    <div
-                      v-for="item in headerRoutes"
-                      :key="item.name"
-                      class="flex items-center rounded-lg p-3 hover:bg-gray-50"
-                    >
-                      <RouterLink
-                        active-class="active"
-                        class="font-bold"
-                        :to="{ name: item.name }"
-                        >{{ item.title }}</RouterLink
-                      >
+              <div
+                class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+              >
+                <div class="px-5 pt-5 pb-6">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <router-link to="/">
+                        <img
+                          class="w-20"
+                          src="/images/anbe-logo.png"
+                          alt="anbe logo"
+                        />
+                      </router-link>
                     </div>
-                  </nav>
+                    <div class="-mr-2">
+                      <PopoverButton
+                        class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
+                      >
+                        <span class="sr-only">Close menu</span>
+                        <XIcon class="h-6 w-6" aria-hidden="true" />
+                      </PopoverButton>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <nav class="grid grid-cols-1 gap-7">
+                      <div
+                        v-for="item in headerRoutes"
+                        :key="item.name"
+                        class="flex items-center rounded-lg"
+                      >
+                        <RouterLink
+                          @click="closeMenu(close)"
+                          active-class="active"
+                          class="w-full p-3 font-bold hover:bg-gray-50"
+                          :to="{ name: item.name }"
+                          >{{ item.title }}</RouterLink
+                        >
+                      </div>
+                    </nav>
+                  </div>
                 </div>
               </div>
-            </div>
-          </PopoverPanel>
+            </PopoverPanel>
+          </div>
         </transition>
       </Popover>
     </header>
@@ -138,6 +143,11 @@ const headerRoutes = [
     title: "Contact",
   },
 ];
+function closeMenu(close) {
+  close();
+  // this.$refs.popover.close();
+}
+// const open = ref(false);
 </script>
 
 <style lang="scss" scoped>

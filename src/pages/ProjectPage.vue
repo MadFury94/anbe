@@ -28,11 +28,11 @@ const serviceData = {
 
     <MiniJumbotron
       src="/images/Smoking-Flare.png"
-      text-class="text-white w-[800px] leading-8 pt-8"
+      text-class="text-white lg:w-[800px] leading-8 pt-8"
       :title="aboutData.title"
       title-class="text-5xl text-orange-500 font-bold font-bree"
       :text="aboutData.text"
-      padding="sm:py-24 lg:py-32 "
+      padding="sm:py-24 lg:py-32 py-10 "
     />
 
     <div class="">
