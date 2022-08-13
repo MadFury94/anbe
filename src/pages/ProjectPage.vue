@@ -1,6 +1,9 @@
 <script setup>
 import ProjectListComponent from "../components/ProjectListComponent.vue";
 import MiniJumbotron from "../components/MiniJumbotron.vue";
+import ProjectTab from "../components/ProjectTab.vue";
+import BladeDivider from "../components/BladeDivider.vue";
+
 const aboutData = {
   title: "About Us",
   text: `ANBE NIGERIA LTD has executed various projects in the areas of
@@ -57,5 +60,10 @@ const serviceData = {
       image-color="bg-white"
       textClass="text-gray-500"
     />
+  </div>
+
+  <div>
+    <ProjectTab />
+    <BladeDivider />
   </div>
 </template>
