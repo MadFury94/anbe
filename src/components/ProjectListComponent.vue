@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-white" />
     <div class="mx-auto">
       <div class="relative shadow-xl sm:overflow-hidden">
         <div class="absolute inset-0">
@@ -11,15 +11,19 @@
           />
         </div>
         <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-          <div class="gap-y-10 gap-x-4 bg-white p-20 lg:grid lg:grid-cols-2">
+          <div
+            class="container mx-auto grid gap-y-10 gap-x-4 bg-white p-20 lg:grid-cols-2"
+          >
             <div v-for="(item, index) in projectList" :key="index">
               <img
                 class="h-[400px] w-[600px] rounded-md"
                 :src="`/images/projects/${item.image}`"
               />
               <div class="mt-4 space-y-2">
-                <h3>{{ item.title }}</h3>
-                <p class="w-[400] break-words">{{ item.subTitle }}</p>
+                <h3 class="font-bree text-lg">{{ item.title }}</h3>
+                <p class="w-[300] break-words font-lato uppercase">
+                  {{ item.subTitle }}
+                </p>
                 <h3 v-if="item.date">{{ item.date }}</h3>
               </div>
             </div>
