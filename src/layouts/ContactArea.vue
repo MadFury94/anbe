@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import ButtonCommon from "../components/ButtonCommon.vue";
+import { companyInformation } from "../store/store";
 
 const formData = ref({
   name: "",
@@ -95,13 +96,19 @@ console.log(import.meta.env.DEV);
         </div>
         <div class="p-20">
           <ul class="space-y-10 font-lato text-lg">
-            <li>
-              <i class="fa-solid fa-map-location-dot"></i>
-              Plot 101 (lakeside Mall), East West Road , Rumuodara, Port
-              Harcourt
+            <li class="w-[500px]">
+              <i class="fa-solid fa-map-location-dot pr-8"></i>
+              <span class="" v-html="companyInformation.addresses.address2">
+              </span>
             </li>
-            <li><i class="fa-solid fa-phone"></i>+234 8033 100 539</li>
-            <li><i class="fa-solid fa-envelope"></i>anbenig@yahoo.com</li>
+            <li>
+              <i class="fa-solid fa-phone pr-8"></i
+              >{{ companyInformation.contactNumbers.phone1 }}
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope pr-8"></i
+              >{{ companyInformation.emails.email1 }}
+            </li>
           </ul>
         </div>
       </div>

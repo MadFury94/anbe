@@ -18,11 +18,22 @@
       </div>
       <div class="uppercase">
         <h1 class="font-bree font-bold text-orange-500">get in touch</h1>
-        <p>Plot 101(lakeside mall)</p>
-        <p>East-West Road, Rumuodara,</p>
-        <p>Port Harcourt, Rivers State.</p>
-        <p>Phone numbers: 084-898-404. +234-803-3100-539, +234-8037-753-444.</p>
-        <p>E-mail: anbenig@yahoo.com, info@anbenig.com</p>
+        <p>{{ companyInformation.addresses.address2 }}</p>
+        <br />
+        <p>
+          Phone numbers:
+          <br />
+          {{ companyInformation.contactNumbers.phone2 }}
+          <br />
+          {{ companyInformation.contactNumbers.phone1 }}
+          <br />
+
+          {{ companyInformation.contactNumbers.phone3 }}
+        </p>
+        <p>
+          E-mail: {{ companyInformation.emails.email1 }},
+          {{ companyInformation.emails.email2 }}
+        </p>
       </div>
 
       <div class="uppercase">
@@ -30,7 +41,7 @@
         <ul class="font-lato underline">
           <li>Home</li>
           <li>Projects</li>
-          <li>About us</li>
+          <li>About dddus</li>
           <li>our services</li>
           <li>contact us</li>
         </ul>
@@ -48,6 +59,10 @@
     </div>
   </footer>
 </template>
+
+<script setup>
+import { companyInformation } from "../store/store";
+</script>
 
 <style scoped>
 .box {

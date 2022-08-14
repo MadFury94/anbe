@@ -10,16 +10,16 @@
     <div
       class="absolute top-2/4 left-2/4 w-full -translate-y-2/4 -translate-x-2/4 px-11"
     >
-      <div class="w-full">
+      <div class="w-full px-20">
         <div class="flex gap-x-4">
-          <div class="h-14 border-2 border-orange-500"></div>
-          <h1 class="text-3xl">ABOUT US</h1>
+          <div class="h-20 border-4 border-orange-500"></div>
+
+          <h1 class="font-bree text-3xl lg:text-5xl">ABOUT US</h1>
         </div>
       </div>
-      <div class="p-4"></div>
-      <section class="grid gap-8 md:grid-cols-2">
+      <section class="f grid gap-8 p-20 md:grid-cols-2">
         <aside>
-          <p class="py-24 pb-7 font-light">
+          <p class="font-light">
             <span class="font-bold">ANBE NIGERIA</span> LTD is an indigenous
             Engineering company, incorporated in 1990 to provide prompt and
             efficient services to the Oil and Gas sectors of the economy.
@@ -39,7 +39,7 @@
             <li>Manpower supplies</li>
           </ul>
         </aside>
-        <aside class="space-y-4 pb-7 font-light">
+        <aside class="space-y-4 pb-7 font-lato text-5xl">
           <p>
             <span class="font-bold">ANBE</span> has a team of highly qualified
             and experienced personnel with background in various engineering
@@ -61,8 +61,12 @@
       </section>
     </div>
   </div>
+  <img
+    class="absolute z-10 -mt-24 ml-4 rotate-180"
+    src="/images/svg/blade-curve.svg"
+  />
 
-  <div class="grid grid-cols-1 py-4 md:grid-cols-3">
+  <section class="grid grid-cols-1 py-4 py-10 md:grid-cols-3">
     <div class="flex flex-col items-center gap-4">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -112,6 +116,6 @@
       </svg>
       <p class="font-bold">Construction</p>
     </div>
-  </div>
+  </section>
 </template>
 <script setup></script>

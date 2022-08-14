@@ -1,115 +1,44 @@
 <template>
   <div class="bg-white-500 py-4 text-center">
-    <h class="text text-2xl font-bold">What we do Best</h>
-    <div class="grid gap-2 md:grid-cols-3 lg:grid-cols-3">
-      <div>
-        <ul>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class=".h-5 .w-5 h-20 w-20 fill-current text-orange-500"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-            />
-          </svg>
-          Design and Fabrication of Smokeless Flares
-        </ul>
-      </div>
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class=".h-5 .w-5 h-20 w-20 fill-current text-orange-500"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-          />
-        </svg>
-        <ul>
-          Pipeline corrosion and leak repair
-        </ul>
-      </div>
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class=".h-5 .w-5 h-20 w-20 fill-current text-orange-500"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-          />
-        </svg>
-        <ul>
-          Instrumentation Works
-        </ul>
-      </div>
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class=".h-5 .w-5 h-20 w-20 fill-current text-orange-500"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-          />
-        </svg>
-        <ul>
-          Flow Station upgrade
-        </ul>
-      </div>
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class=".h-5 .w-5 h-20 w-20 fill-current text-orange-500"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-          />
-        </svg>
-        <ul>
-          Fabrication works
-        </ul>
-      </div>
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class=".h-5 .w-5 h-20 w-20 fill-current text-orange-500"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-          />
-        </svg>
-        <ul>
-          Design, fabrication and Installation of Remote Ignition Systems
-        </ul>
+    <h class="text font-bree font-bold lg:text-4xl">What we do Best</h>
+    <div class="grid gap-8 p-14 md:grid-cols-3 lg:grid-cols-3">
+      <div v-for="(item, index) in services" :key="index">
+        <div class="flex items-center">
+          <i class="pr-4 text-4xl" :class="item.icon"></i>
+          <p class="text-left font-bold lg:text-2xl">
+            {{ item.title }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+const services = [
+  {
+    icon: "fa-solid fa-pen-to-square",
+    title: "Design and Fabrication of Smokeless Flares",
+  },
+  {
+    icon: "fa-solid fa-screwdriver-wrench",
+    title: "Pipeline corrosion and leak repair",
+  },
+  {
+    icon: "fa-solid fa-gears",
+    title: "Instrumentation Works",
+  },
+  {
+    icon: "fa-regular fa-key",
+    title: "Flow station upgrade",
+  },
+  {
+    icon: "fa-regular fa-network-wired",
+    title: "	Fabrication works",
+  },
+  {
+    icon: "fa-regular fa-lightbulb",
+    title: "Design, fabrication and Installation of Remote Ignition Systems",
+  },
+];
+</script>

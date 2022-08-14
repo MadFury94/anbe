@@ -1,11 +1,12 @@
 <script setup>
+import { companyInformation } from "../store/store";
 import ProjectListComponent from "../components/ProjectListComponent.vue";
 import MiniJumbotron from "../components/MiniJumbotron.vue";
 import ProjectTab from "../components/ProjectTab.vue";
 import BladeDivider from "../components/BladeDivider.vue";
 
 const aboutData = {
-  title: "About Us",
+  title: "Some of our work",
   text: `ANBE NIGERIA LTD has executed various projects in the areas of
                   Design, Fabrication and installation of smokeless flares
                   Onshore/Offshore fabrication works, Procurement and
@@ -43,7 +44,10 @@ const serviceData = {
         <div></div>
         <div class="bg-orange-500 py-10 px-20 text-white">Get A Quote</div>
         <div class="col-span-2 px-20 py-10 text-gray-500">
-          CALL US: <span class="text-orange-500">+2348033100539</span>
+          CALL US:
+          <span class="text-orange-500">{{
+            companyInformation.contactNumbers.phone1
+          }}</span>
         </div>
       </div>
     </div>
