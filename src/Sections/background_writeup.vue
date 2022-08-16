@@ -1,5 +1,80 @@
 <template>
-  <div class="relative font-bold text-white">
+  <section>
+    <div>
+      <div class="relative">
+        <div class="absolute inset-x-0 bottom-0 h-1/2" />
+        <div>
+          <div class="relative shadow-xl sm:overflow-hidden">
+            <div class="absolute inset-0">
+              <img
+                class="h-full w-full object-cover"
+                src="/images/handyman_02.jpeg"
+                alt="section image"
+              />
+              <div class="absolute inset-0 bg-red-500 mix-blend-multiply" />
+            </div>
+            <div class="relative px-4 sm:px-6 lg:px-8">
+              <div class="flex gap-x-4 py-40 lg:px-16">
+                <div class="h-20 border-4 border-orange-500"></div>
+                <div>
+                  <h1 class="titleClass pb-10 font-bree text-5xl text-white">
+                    About Page
+                  </h1>
+                  <p class="font-lato text-white"></p>
+                  <section class="grid gap-8 text-white md:grid-cols-2">
+                    <aside>
+                      <p class="font-light">
+                        <span class="font-bold">ANBE NIGERIA</span> LTD is an
+                        indigenous Engineering company, incorporated in 1990 to
+                        provide prompt and efficient services to the Oil and Gas
+                        sectors of the economy.
+                      </p>
+                      <div>
+                        <h1 class="py-4 font-semibold">
+                          The major areas of Competence are:
+                        </h1>
+                      </div>
+                      <ul class="list-disc font-light">
+                        <li>Design and fabrication of Smokeless Flares</li>
+                        <li>Pipeline installation, repair and maintenance</li>
+                        <li>Pipeline corrosion and leak repair</li>
+                        <li>Remote Ignition systems</li>
+                        <li>Instrumentation</li>
+                        <li>Leasing and Maintenance of operation vehicles</li>
+                        <li>Manpower supplies</li>
+                      </ul>
+                    </aside>
+                    <aside class="space-y-4 pb-7 font-lato text-5xl">
+                      <p>
+                        <span class="font-bold">ANBE</span> has a team of highly
+                        qualified and experienced personnel with background in
+                        various engineering fields, specializing in combustion
+                        technology and equipment maintenance, such as generators
+                        and earth moving equipment.
+                      </p>
+                      <p>
+                        <span class="font-bold">ANBE</span> has a well equipped
+                        ultra modern Fabrication and Maintenance facility with
+                        state of the art equipment to undertake projects in her
+                        area of competence.
+                      </p>
+                      <p>
+                        We also have a corporate administrative Office, well
+                        equipped for timely delivery of projects. ANBE has a
+                        large pool of working capital and enjoys adequate
+                        financial backing from first class banks in the country
+                      </p>
+                    </aside>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div v-if="false" class="relative font-bold text-white">
     <div class="w-full brightness-50">
       <img
         class="h-screen w-full object-fill"
@@ -8,7 +83,7 @@
       />
     </div>
     <div
-      class="absolute top-2/4 left-2/4 w-full -translate-y-2/4 -translate-x-2/4 px-11"
+      class="top-2/4 left-2/4 w-full -translate-y-2/4 -translate-x-2/4 px-11"
     >
       <div class="w-full px-20">
         <div class="flex gap-x-4">
@@ -62,6 +137,7 @@
     </div>
   </div>
   <img
+    v-if="false"
     class="absolute z-10 -mt-24 ml-4 rotate-180"
     src="/images/svg/blade-curve.svg"
   />

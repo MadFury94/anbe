@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-x-4 py-4 px-4">
+  <!-- <div class="flex gap-x-4 py-4 px-4">
     <div class="h-14 border-2 border-orange-500"></div>
     <h1 class="py-4 text-3xl font-extrabold">Our Leader</h1>
   </div>
@@ -10,11 +10,27 @@
         class="h-48 w-96 items-center object-contain"
         src="https://anbenig.com/wp-content/uploads/2020/01/12065477_10207241341167807_1876850073176580906_n.jpg"
         alt="Leader"
+      /> -->
+  <div :class="padding" class="relative px-4 sm:px-6 lg:px-8">
+    <div :class="padding" class="flex gap-x-4 lg:px-16">
+      <div class="h-20 border-4 border-orange-500"></div>
+      <div>
+        <h1 class="font-bree text-4xl font-bold">OUR LEADER</h1>
+      </div>
+    </div>
+    <div>
+      <img
+        class="h-48 w-96 items-center object-contain"
+        src="https://anbenig.com/wp-content/uploads/2020/01/12065477_10207241341167807_1876850073176580906_n.jpg"
+        alt="Leader"
       />
       <span class="py-4 px-24 font-semibold"></span>
-
       <p class="py-4 px-24 font-semibold text-orange-500">Managing Director</p>
     </div>
+    <!-- <span class="py-4 px-24 font-semibold"></span>
+
+      <p class="py-4 px-24 font-semibold text-orange-500">Managing Director</p>
+    </div> -->
 
     <div>
       <p class="py-4 px-24 font-semibold">

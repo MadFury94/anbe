@@ -18,7 +18,7 @@
             />
           </div>
           <div :class="padding" class="relative px-4 sm:px-6 lg:px-8">
-            <div :class="padding" class="flex gap-x-4 lg:px-40">
+            <div :class="padding" class="flex gap-x-4 lg:px-16">
               <div class="h-20 border-4 border-orange-500"></div>
               <div>
                 <h1 :class="titleClass">{{ title }}</h1>
