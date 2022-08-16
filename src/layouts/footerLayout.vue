@@ -9,7 +9,7 @@
           <p class="py-2 font-lato">
             ANBE NIGERIA LTD is an indigenous Engineering company, incorporated
             in 1990 to provide prompt and efficient services to the Oil and Gas
-            sectors of the economy.
+            sectors of the economy..
           </p>
           <p class="py-2">opening hours</p>
           <p>mon - friday</p>
