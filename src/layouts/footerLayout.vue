@@ -5,7 +5,7 @@
     >
       <div>
         <div class="uppercase">
-          <h1 class="font-bree font-bold text-orange-500">work with anbe</h1>
+          <h1 class="font-bree font-bold text-orange-500">Work with anbe</h1>
           <p class="py-2 font-lato">
             ANBE NIGERIA LTD is an indigenous Engineering company, incorporated
             in 1990 to provide prompt and efficient services to the Oil and Gas
