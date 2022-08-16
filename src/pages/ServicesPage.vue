@@ -22,7 +22,7 @@ import JumboTronComponent from "../components/JumboTronComponent.vue";
     <div class="grid items-center lg:grid-cols-2">
       <div class="mt-40 bg-gray-200 p-10 lg:p-40">
         <h1 class="font-bree text-2xl font-bold lg:text-5xl">
-          Work with a Team of Talented workers
+          Work with a Team of Talented workers.
         </h1>
         <p class="py-8 lg:text-lg">
           Our core local professional Engineers with adequate academic and
