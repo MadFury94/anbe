@@ -33,15 +33,16 @@
     </div> -->
 
     <div>
-      <p class="py-4 px-24 font-semibold">
-        Mr Ernest Azukaeme is the pioneer Managing Director of Jurak Oil
-        Services Ltd, an indigenous smokeless flare manufacturing company based
-        in Port Harcourt. A graduate of Business Administration with post
-        graduate qualification in marketing, Mr. Azukaeme’s experience traverses
-        the banking sector, where he spent over a decade specializing in risk
-        Asset Management. He worked for years as project Director with Walter
-        Smith Petromann Oil Company Ltd, company owned by Canadians / Nigerians,
-        which was involved in many projects for Shell and Chevron.
+      <p class="py-4 px-24">
+        <span class="font-semibold italic">Mr Ernest Azukaeme</span> is the
+        pioneer Managing Director of Jurak Oil Services Ltd, an indigenous
+        smokeless flare manufacturing company based in Port Harcourt. A graduate
+        of Business Administration with post graduate qualification in
+        marketing, Mr. Azukaeme’s experience traverses the banking sector, where
+        he spent over a decade specializing in risk Asset Management. He worked
+        for years as project Director with Walter Smith Petromann Oil Company
+        Ltd, company owned by Canadians / Nigerians, which was involved in many
+        projects for Shell and Chevron.
       </p>
     </div>
   </div>

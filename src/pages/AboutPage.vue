@@ -58,21 +58,20 @@ const serviceData = {
       padding="sm:py-24 lg:py-32 py-10 "
     /> -->
     <Background_writeup />
-
-    <div class="">
-      <div class="grid-cols-4 items-center font-bree text-2xl lg:grid">
-        <div></div>
-        <div class="bg-orange-500 py-10 px-20 text-white">Get A Quote</div>
-        <div class="col-span-2 px-20 py-10 text-gray-500">
-          CALL US:
-          <span class="text-orange-500">{{
-            companyInformation.contactNumbers.phone1
-          }}</span>
-        </div>
+  </div>
+  <Ourleader />
+  <div class="py-10">
+    <div class="grid-cols-4 items-center font-bree text-2xl lg:grid">
+      <div></div>
+      <div class="bg-orange-500 py-10 px-20 text-white">Get A Quote</div>
+      <div class="col-span-2 px-20 py-10 text-gray-500">
+        CALL US:
+        <span class="text-orange-500">{{
+          companyInformation.contactNumbers.phone1
+        }}</span>
       </div>
     </div>
   </div>
-  <Ourleader />
   <div>
     <MiniJumbotron
       text-class="text-white w-[800px] leading-8 pt-8"

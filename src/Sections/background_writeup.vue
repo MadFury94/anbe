@@ -11,14 +11,14 @@
                 src="/images/handyman_02.jpeg"
                 alt="section image"
               />
-              <div class="absolute inset-0 bg-red-500 mix-blend-multiply" />
+              <div class="absolute inset-0 mix-blend-multiply" />
             </div>
             <div class="relative px-4 sm:px-6 lg:px-8">
               <div class="flex gap-x-4 py-40 lg:px-16">
                 <div class="h-20 border-4 border-orange-500"></div>
                 <div>
                   <h1 class="titleClass pb-10 font-bree text-5xl text-white">
-                    About Page
+                    ABOUT PAGE
                   </h1>
                   <p class="font-lato text-white"></p>
                   <section class="grid gap-8 text-white md:grid-cols-2">

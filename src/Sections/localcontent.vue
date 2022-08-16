@@ -4,7 +4,7 @@
       class="grid gap-4 bg-gray-800 py-4 px-24 font-sans text-3xl font-bold uppercase text-orange-500 md:grid-cols-2"
     >
       Local Content Policy
-      <p class="text-sm font-extralight text-white">
+      <p class="text-sm font-light text-white">
         It is the intention of ANBE NIGERIA LIMITED to encourage the purchase of
         equipment, goods, materials, suppliers and manpower from Nigerian and to
         make use of services and facilities professional or otherwise which are
