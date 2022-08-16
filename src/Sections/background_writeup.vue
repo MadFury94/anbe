@@ -14,7 +14,7 @@
         <div class="flex gap-x-4">
           <div class="h-20 border-4 border-orange-500"></div>
 
-          <h1 class="font-bree text-3xl lg:text-5xl">ABOUT US</h1>
+          <h1 class="font-bree text-3xl lg:text-5xl">ABOUT ME</h1>
         </div>
       </div>
       <section class="f grid gap-8 p-20 md:grid-cols-2">
