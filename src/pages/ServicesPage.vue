@@ -34,7 +34,10 @@ import JumboTronComponent from "../components/JumboTronComponent.vue";
         </p>
       </div>
       <div>
-        <img class="object-fill lg:h-[836px]" src="images/bakken-flaring.jpg" />
+        <img
+          class="object-fill lg:h-[836px]"
+          src="/images/bakken-flaring.jpg"
+        />
       </div>
     </div>
   </main>
