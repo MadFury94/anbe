@@ -136,14 +136,16 @@
       </section>
     </div>
   </div>
+
   <img
     v-if="false"
     class="absolute z-10 -mt-24 ml-4 rotate-180"
     src="/images/svg/blade-curve.svg"
   />
+  <div><img class="-mt-2" src="/images/svg/blade.svg" /></div>
 
-  <section class="grid grid-cols-1 py-4 py-10 md:grid-cols-3">
-    <div class="flex flex-col items-center gap-4">
+  <section class="grid grid-cols-1 py-10 md:grid-cols-3">
+    <div class="flex flex-col items-center gap-6">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class=".h-5 .w-5 h-20 w-20 fill-current text-orange-500"
@@ -176,7 +178,7 @@
       <p class="font-bold">Procurement</p>
     </div>
 
-    <div class="flex flex-col items-center gap-4">
+    <div class="flex flex-col items-center gap-6">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class=".h-5 .w-5 h-20 w-20 fill-current text-orange-500"
@@ -194,4 +196,31 @@
     </div>
   </section>
 </template>
-<script setup></script>
+<script setup>
+const services = [
+  {
+    icon: "fa-solid fa-pen-to-square",
+    title: "Design and Fabrication of Smokeless Flares",
+  },
+  {
+    icon: "fa-solid fa-screwdriver-wrench",
+    title: "Pipeline corrosion and leak repair",
+  },
+  {
+    icon: "fa-solid fa-gears",
+    title: "Instrumentation Works",
+  },
+  {
+    icon: "fa-regular fa-key",
+    title: "Flow station upgrade",
+  },
+  {
+    icon: "fa-regular fa-network-wired",
+    title: "	Fabrication works",
+  },
+  {
+    icon: "fa-regular fa-lightbulb",
+    title: "Design, fabrication and Installation of Remote Ignition Systems",
+  },
+];
+</script>

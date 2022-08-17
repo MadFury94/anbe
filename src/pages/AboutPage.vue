@@ -59,6 +59,7 @@ const serviceData = {
     /> -->
     <Background_writeup />
   </div>
+  <div><img class="-mt-2" src="/images/svg/blade.svg" /></div>
   <Ourleader />
   <div class="py-10">
     <div class="grid-cols-4 items-center font-bree text-2xl lg:grid">
@@ -72,7 +73,7 @@ const serviceData = {
       </div>
     </div>
   </div>
-  <div>
+  <!-- <div>
     <MiniJumbotron
       text-class="text-white w-[800px] leading-8 pt-8"
       title="Related Services"
@@ -83,7 +84,7 @@ const serviceData = {
       image-color="bg-white"
       textClass="text-gray-500"
     />
-  </div>
+  </div> -->
   <Localcontent />
   <BladeDivider />
 </template>

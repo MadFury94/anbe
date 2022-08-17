@@ -1,5 +1,4 @@
 <script setup>
-import Our_services_image_background from "../Sections/Our_services_image_background.vue";
 import What_we_do_best from "../Sections/what_we_do_best.vue";
 import JumboTronComponent from "../components/JumboTronComponent.vue";
 </script>

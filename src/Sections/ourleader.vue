@@ -25,15 +25,17 @@
         alt="Leader"
       />
       <span class="py-4 px-24 font-semibold"></span>
-      <p class="py-4 px-24 font-semibold text-orange-500">Managing Director</p>
+      <p class="py-4 px-24 font-bree font-semibold text-orange-500">
+        Managing Director
+      </p>
     </div>
     <!-- <span class="py-4 px-24 font-semibold"></span>
 
       <p class="py-4 px-24 font-semibold text-orange-500">Managing Director</p>
     </div> -->
 
-    <div>
-      <p class="py-4 px-24">
+    <div class="bg-gray-200">
+      <p class="py-4 px-24 font-bree">
         <span class="font-semibold italic">Mr Ernest Azukaeme</span> is the
         pioneer Managing Director of Jurak Oil Services Ltd, an indigenous
         smokeless flare manufacturing company based in Port Harcourt. A graduate
