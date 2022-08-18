@@ -1,6 +1,7 @@
 <script setup>
 import What_we_do_best from "../Sections/what_we_do_best.vue";
 import JumboTronComponent from "../components/JumboTronComponent.vue";
+import ContactArea from "../layouts/ContactArea.vue";
 </script>
 <template>
   <main>
@@ -39,5 +40,6 @@ import JumboTronComponent from "../components/JumboTronComponent.vue";
         />
       </div>
     </div>
+    <ContactArea />
   </main>
 </template>
