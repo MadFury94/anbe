@@ -56,5 +56,42 @@ const contactJumboData = {
   <p class="p font-bree"></p>
   <ContactOptions />
   <ContactArea />
+  <section>
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          width="600"
+          height="500"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=%20East%20West%20Road,%20Rumudara,%20Port%20Harcourt%20Rivers%20State&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe
+        ><a
+          href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"
+        ></a
+        ><br />
+      </div>
+    </div>
+  </section>
   <BladeDivider />
 </template>
+<!-- <style>
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+</style>
+<a href="https://www.embedgooglemap.net">embed code for google map</a>
+<style>
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+</style> -->
