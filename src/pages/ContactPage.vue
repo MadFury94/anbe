@@ -10,11 +10,16 @@ const contactTitle = {
   title: "Contact Us",
   image: "https://anbenig.com/wp-content/uploads/2019/12/handyman_01.jpg",
 };
-const contactTitle2 = {
-  title2: "Get in Touch",
-};
-const contactText1 = {
-  text: "Or Request a Quote",
+// const contactTitle2 = {
+//   title2: "Get in Touch",
+// };
+// const contactText1 = {
+//   text: "Or Request a Quote",
+// };
+const contactJumboData = {
+  title: "Get in Touch <br />Or Request a Quote",
+  minitext:
+    "Our Fabrication facility is located Omueke village, Igwuruta Rd Ikwerre LGA Rivers State. These are our other locations",
 };
 </script>
 
@@ -44,11 +49,9 @@ const contactText1 = {
   </div>
   <ContactJumbotron
     title-class="text-5xl text-orange-500 font-bold font-bree"
-    :title="contactTitle2.title2"
-    text-class="text-5xl text-orange-500 font-bold font-bree"
-    :text="contactText1.text"
-    minitext="Our Fabrication facility is located Omueke village, Igwuruta Rd Ikwerre LGA
-    Rivers State. These are our other locations"
+    :title="contactJumboData.title"
+    minitext-class="font-bree"
+    :minitext="contactJumboData.minitext"
   />
   <p class="p font-bree"></p>
   <ContactOptions />

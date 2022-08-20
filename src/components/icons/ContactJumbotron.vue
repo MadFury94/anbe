@@ -21,9 +21,9 @@
             <div :class="padding" class="flex gap-x-4 lg:px-16">
               <div class="h-20 border-4 border-orange-500"></div>
               <div>
-                <h1 :class="titleClass">{{ title }}</h1>
-                <p :class="textClass" class="font-lato" v-html="text"></p>
-                <p class="bg-red-500">
+                <h1 v-html="title" :class="titleClass"></h1>
+                <!-- <p :class="textClass" class="font-lato" v-html="text"></p> -->
+                <p :class="minitextClass">
                   {{ minitext }}
                 </p>
               </div>
@@ -60,7 +60,7 @@ defineProps({
   },
   minitextClass: {
     type: String,
-    default: "",
+    default: "bg-yellow-500",
   },
   textClass: {
     type: String,

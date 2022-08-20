@@ -1,6 +1,8 @@
 <template>
   <div>
-    <section class="grid gap-y-10 px-10 py-20 md:grid-cols-2 lg:grid-cols-3">
+    <section
+      class="grid place-content-center gap-y-10 px-10 py-20 sm:grid-cols-3 lg:grid-cols-3"
+    >
       <div v-for="(item, index) in serviceList" :key="index">
         <div class="box-border h-48 w-48 items-center gap-x-4 border-4 p-4">
           <!-- <img
