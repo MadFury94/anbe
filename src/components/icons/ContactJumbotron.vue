@@ -22,12 +22,10 @@
               <div class="h-20 border-4 border-orange-500"></div>
               <div>
                 <h1 :class="titleClass">{{ title }}</h1>
-                <p
-                  v-if="text"
-                  :class="textClass"
-                  class="font-lato"
-                  v-html="text"
-                ></p>
+                <p :class="textClass" class="font-lato" v-html="text"></p>
+                <p class="bg-red-500">
+                  {{ minitext }}
+                </p>
               </div>
             </div>
           </div>
@@ -56,9 +54,13 @@ defineProps({
     default: "mini subtitle",
   },
 
-  text: {
+  minitext: {
     type: String,
     default: "mini subtitle2",
+  },
+  minitextClass: {
+    type: String,
+    default: "",
   },
   textClass: {
     type: String,

@@ -47,11 +47,10 @@ const contactText1 = {
     :title="contactTitle2.title2"
     text-class="text-5xl text-orange-500 font-bold font-bree"
     :text="contactText1.text"
+    minitext="Our Fabrication facility is located Omueke village, Igwuruta Rd Ikwerre LGA
+    Rivers State. These are our other locations"
   />
-  <p class="font-bree">
-    Our Fabrication facility is located Omueke village, Igwuruta Rd Ikwerre LGA
-    Rivers State. These are our other locations
-  </p>
+  <p class="p font-bree"></p>
   <ContactOptions />
   <ContactArea />
   <BladeDivider />
