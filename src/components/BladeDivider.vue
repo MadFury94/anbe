@@ -2,7 +2,7 @@
 import ButtonCommon from "../components/ButtonCommon.vue";
 </script>
 <template>
-  <img class="" src="/images/svg/blade.svg" />
+  <img class="-mt-1" src="/images/svg/blade.svg" />
   <div
     class="flex flex-col items-center justify-between py-20 lg:flex-row lg:px-28"
   >

@@ -33,7 +33,9 @@ import Background_writeup from "../Sections/background_writeup.vue";
   <div><img class="-mt-2" src="/images/svg/blade.svg" /></div>
   <Ourleader />
   <div class="py-10">
-    <div class="grid-cols-4 items-center font-bree text-2xl lg:grid">
+    <div
+      class="grid-cols-4 items-center text-justify font-bree text-2xl lg:grid"
+    >
       <div></div>
       <div class="bg-orange-500 py-10 px-20 text-white">Get A Quote</div>
       <div class="col-span-2 px-20 py-10 text-gray-500">

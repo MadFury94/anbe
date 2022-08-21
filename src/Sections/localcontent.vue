@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div
-      class="grid gap-4 bg-gray-800 py-4 px-24 font-sans text-3xl font-bold uppercase text-orange-500 md:grid-cols-2"
-    >
-      Local Content Policy
-      <p class="text-sm font-light text-white">
+    <div class="grid items-center gap-4 bg-gray-800 py-10 px-24 md:grid-cols-2">
+      <h1 class="font-bree text-3xl font-bold uppercase text-orange-500">
+        Local Content Policy
+      </h1>
+      <p class="text-justify text-sm font-light text-white">
         It is the intention of ANBE NIGERIA LIMITED to encourage the purchase of
         equipment, goods, materials, suppliers and manpower from Nigerian and to
         make use of services and facilities professional or otherwise which are

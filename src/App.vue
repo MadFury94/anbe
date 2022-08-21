@@ -8,7 +8,7 @@ import FooterLayout from "./layouts/footerLayout.vue";
 <template>
   <HeaderLayout />
 
-  <div class="">
+  <div class="w-screen">
     <RouterView />
   </div>
 
