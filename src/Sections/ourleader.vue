@@ -21,7 +21,7 @@
     <div>
       <img
         class="h-48 w-96 items-center object-contain"
-        src="https://anbenig.com/wp-content/uploads/2020/01/12065477_10207241341167807_1876850073176580906_n.jpg"
+        src="public\images\Our Leader\our leader.jpg"
         alt="Leader"
       />
       <span class="py-4 px-24 font-semibold"></span>
