@@ -21,7 +21,7 @@
     <div>
       <img
         class="h-48 w-96 items-center object-contain"
-        src="public\images\Our Leader\our leader.jpg"
+        src="public\images\leader\ourleader.jpg"
         alt="Leader"
       />
       <span class="py-4 px-24 font-semibold"></span>
