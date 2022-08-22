@@ -59,42 +59,46 @@ const contactJumboData = {
   <p class="p font-bree"></p>
   <ContactOptions />
   <ContactArea />
-  <section>
+
+  <section class="grid grid-cols-3 py-20">
+    <div></div>
     <div class="mapouter">
       <div class="gmap_canvas">
         <iframe
-          width="600"
-          height="500"
+          width="1080"
+          height="546"
           id="gmap_canvas"
-          src="https://maps.google.com/maps?q=%20East%20West%20Road,%20Rumudara,%20Port%20Harcourt%20Rivers%20State&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=%20Plot%20101%20East%20west%20Road,%20Rumuodara,%20Port%20Harcourt%20Rivers%20State&t=&z=13&ie=UTF8&iwloc=&output=embed"
           frameborder="0"
           scrolling="no"
           marginheight="0"
           marginwidth="0"
         ></iframe
-        ><a
-          href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"
-        ></a
-        ><br />
+        ><a href="https://www.whatismyip-address.com/divi-discount/"
+          >divi discount</a
+        ><br /><a href="https://www.embedgooglemap.net"
+          >how to add google map in wordpress</a
+        >
       </div>
     </div>
+    <div></div>
   </section>
+
   <BladeDivider />
 </template>
-<!-- <style>
+
+<style>
 .mapouter {
   position: relative;
   text-align: right;
   height: 500px;
-  width: 600px;
+  width: 800px;
 }
-</style>
-<a href="https://www.embedgooglemap.net">embed code for google map</a>
-<style>
+
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 500px;
-  width: 600px;
+  width: 800px;
 }
-</style> -->
+</style>

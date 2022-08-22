@@ -95,7 +95,7 @@ console.log(import.meta.env.DEV);
           </ul>
         </div>
         <div class="p-20">
-          <ul class="space-y-10 font-lato text-lg">
+          <ul class="space-y-10 pb-40 font-lato text-lg">
             <li class="w-full">
               <i class="fa-solid fa-map-location-dot pr-8"></i>
               <span class="" v-html="companyInformation.addresses.address2">
