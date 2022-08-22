@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-100 child">
+  <div class="child bg-gray-100">
     <div class="p-10">
-      <h1 class="text-3xl py-4 font-bold">
+      <h1 class="py-4 text-3xl font-bold">
         Work with a Team of Talented workers
       </h1>
       <p>
@@ -15,11 +15,7 @@
     </div>
   </div>
   <div>
-    <img
-      class="h-auto lg:h-[800px] w-full object-fill"
-      src="https://anbenig.com/wp-content/uploads/2017/09/bakken-flaring-1.jpg"
-      alt="Snow"
-    />
+    <img class="h-auto w-full object-fill lg:h-[800px]" alt="Snow" />
   </div>
 </template>
 <style scoped></style>

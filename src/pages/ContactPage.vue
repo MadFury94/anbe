@@ -8,7 +8,7 @@ import ContactArea from "../layouts/ContactArea.vue";
 
 const contactTitle = {
   title: "Contact Us",
-  image: "https://anbenig.com/wp-content/uploads/2019/12/handyman_01.jpg",
+  // src: "\images\anbe-contact.jpg",
 };
 // const contactTitle2 = {
 //   title2: "Get in Touch",
@@ -28,7 +28,7 @@ const contactJumboData = {
     <img class="absolute z-10 -mt-1 -ml-1" src="/images/svg/blade-curve.svg" />
 
     <MiniJumbotron
-      image="https://anbenig.com/wp-content/uploads/2019/12/handyman_01.jpg"
+      image="\images\anbe-contact.jpg"
       title-class="text-5xl text-orange-500 font-bold font-bree"
       :title="contactTitle.title"
       :text="null"
@@ -46,6 +46,9 @@ const contactJumboData = {
         </div>
       </div>
     </div>
+  </div>
+  <div class="relative">
+    <img class="absolute z-10 -mt-1 -ml-1" src="/images/svg/blade-curve.svg" />
   </div>
   <ContactJumbotron
     title-class="text-5xl text-orange-500 font-bold font-bree"

@@ -86,7 +86,7 @@ console.log(import.meta.env.DEV);
 
         <!-- contact form -->
       </div>
-      <div class="bg-gray-200">
+      <div v-if="true" class="bg-gray-200">
         <div class="bg-gray-800">
           <ul class="flex justify-center gap-x-10 py-10 text-2xl text-white">
             <li><i class="fa-brands fa-twitter"></i></li>
@@ -96,7 +96,7 @@ console.log(import.meta.env.DEV);
         </div>
         <div class="p-20">
           <ul class="space-y-10 font-lato text-lg">
-            <li class="w-[500px]">
+            <li class="w-full">
               <i class="fa-solid fa-map-location-dot pr-8"></i>
               <span class="" v-html="companyInformation.addresses.address2">
               </span>

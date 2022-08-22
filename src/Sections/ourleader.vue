@@ -8,7 +8,6 @@
     <div>
       <img
         class="h-48 w-96 items-center object-contain"
-        src="https://anbenig.com/wp-content/uploads/2020/01/12065477_10207241341167807_1876850073176580906_n.jpg"
         alt="Leader"
       /> -->
   <div :class="padding" class="relative px-4 sm:px-6 lg:px-8">
@@ -21,7 +20,7 @@
     <div>
       <img
         class="h-48 w-96 items-center object-contain"
-        image="\images\leader\ourleader.jpg"
+        src="/images/leader/ourleader.jpg"
         alt="Leader"
       />
       <span class="py-4 px-24 font-semibold"></span>
@@ -35,7 +34,7 @@
     </div> -->
 
     <div class="bg-gray-200">
-      <p class="py-4 px-24 font-bree">
+      <p class="px-10 py-4 font-bree">
         <span class="font-semibold italic">Mr Ernest Azukaeme</span> is the
         pioneer Managing Director of Jurak Oil Services Ltd, an indigenous
         smokeless flare manufacturing company based in Port Harcourt. A graduate
